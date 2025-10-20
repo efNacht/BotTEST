@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: faberlic-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8229049437:AAFnS8Q-OhBbfTEFax0zb4EK1b6FNxj4wlQ
+      - key: SERPAPI_KEY
+        value: 6bd3650d9de2d08b1c132ce28e1de3567604c6daebb742d147b68f3b87a61255
+      - key: PPLX_KEY
+        value: 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
